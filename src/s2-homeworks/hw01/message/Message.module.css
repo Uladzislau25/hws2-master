@@ -23,13 +23,22 @@
 
 .text {
     position: relative;
-    background: #007bff;
+    background: #06c;
     color: #fff;
     border-radius: 15px 15px 0 15px;
     padding: 10px 15px;
 }
 
 .text:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #06c;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    bottom: 0;
+    right: -20px;
 }
 
 .name {

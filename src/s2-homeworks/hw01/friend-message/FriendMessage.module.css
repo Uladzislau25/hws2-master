@@ -23,14 +23,22 @@
 
 .friendText {
     position: relative;
-    background: #f5f7fb;;
+    background: #f5f7fb;
     color: #fff;
     border-radius: 15px 15px 15px 0;
     padding: 10px 15px;
 }
 
 .friendText:after {
-
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #f5f7fb;
+    border-top: 10px solid transparent;
+    bottom: 0;
+    left: -20px;
 }
 
 .friendName {
